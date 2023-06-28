@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CatsFights!.exe" version="1.0.0.0" publicKeyToken="95b243aec1734da5" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CatsFights!" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CatsFights!.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CatsFights!.exe" size="8047584">
+      <assemblyIdentity name="CatsFights!" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uAiSUSgyt7fobUJU+7Bmtdt0LsTWUwUjY6Hk3mZFplc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4991352">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/0K8pwRgXhh6u0VSOGixUSjWrxworUCkV51QfTSpU7I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="591752">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qWDdTS8PN7PAn/uVZ8MkJrh5ExDX65NcBMgZw9Rr1J4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.dll" size="393520">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.115.5" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>X6xanpuLva1s9mHb8xh+OVkUzXE540tyWQbvu2ASLA0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.EF6.dll" size="201528">
+      <assemblyIdentity name="System.Data.SQLite.EF6" version="1.0.115.5" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hXoof385CXwvcP8M5oHTUZba7mC0PyVbxyuEKjUSCMQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.Linq.dll" size="201520">
+      <assemblyIdentity name="System.Data.SQLite.Linq" version="1.0.115.5" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T6PMifXDz6D3lMH4SbDqjQgeXA5p1/stg0yu0I0RQMA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CatsFights!.exe.config" size="2145">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tcf187OL79S81nxXKuMtEtyPgGyZD/BYdL3kgLt8qtc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FightSound.mp3" size="1647038">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mnWSKuBxMQZwRYwZfb8o6mcqdCtXr3JPtH6v7DV26RQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MainSoundTrack.mp3" size="2305323">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3i307z39Gc0eZphTdDP40oKoSLm4l7JxXKN9FgxIaHI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="WinSound.mp3" size="42074">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BwahiGC2+inRte1EX9hJDIn13gDJ2kedtDShOBFTxHk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-47ELB3O\strel" issuerKeyHash="651d940c5a9eef9b5e084469ae0dc34653fb4514" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+uRLa/jCC7RwW0lYL0VJgRbhieIflcdG4LM6gaAklsk=</DigestValue></Reference></SignedInfo><SignatureValue>vQYVFIeJYBfNAbR04j/yTr8pgsXxtLLmrXbWgQf+woHiHZ9KqCMiYJ03MyR8rqB81fa4mWbzajPbCz7sCMARo8Irx9VZydAs5A1/aTHVYhTR8c+RBOAwst1eAwvu07/wsm/vGyW8/lejTN0i3NXsUqWKYeE2VzSec6IuocAJ/cw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zT0EVHb42/5rgdm9iP4TY8D6dLhvgNxZPNJBta849egoH08f+KmDuWXY3s/sWL+Ti+XyY29UZBFxmXKiYC7sjkZrgmtKy6zKzm/am4rAQvUP9xlIC0ZV9190RMzMjv8/eiIQCMUEe+lwCOb5ukqF+9LVd0UU+zRtEVWE7qtauM0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c99624a0813ab3e046c7951fe289e1168149452f58495b70b40bc2f86b4be4fa" Description="" Url=""><as:assemblyIdentity name="CatsFights!.exe" version="1.0.0.0" publicKeyToken="95b243aec1734da5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-47ELB3O\strel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>v9y0GsjXXvmkE8YR/H9DETiENvgaHP0BbgxqeeA2l1g=</DigestValue></Reference></SignedInfo><SignatureValue>IGe8yMC2aoLzfabHjKHTvUwLzSdgNatG0UNxX6UyUh0NFc7lnhdbfZrtG7vCGhfXY9fm3hIrxzP/Mu3x4GFKplHtNPJcG/ryYYSbIraZVekRzSu5pij1jP3fFI+o8rKLDBGiivYpXU3zahkyl+efTAmU+e1+fMKWQUPRBqZDU/4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zT0EVHb42/5rgdm9iP4TY8D6dLhvgNxZPNJBta849egoH08f+KmDuWXY3s/sWL+Ti+XyY29UZBFxmXKiYC7sjkZrgmtKy6zKzm/am4rAQvUP9xlIC0ZV9190RMzMjv8/eiIQCMUEe+lwCOb5ukqF+9LVd0UU+zRtEVWE7qtauM0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGr1erO0m3oBOXLA2hNQkrTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADQANwBFAEwAQgAzAE8AXABzAHQAcgBlAGwwHhcNMjIwNjE0MTc1MjA3WhcNMjMwNjE0MjM1MjA3WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADQANwBFAEwAQgAzAE8AXABzAHQAcgBlAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM09BFR2+Nv+a4HZvYj+E2PA+nS4b4DcWTzSQbWvOPXoKB9PH/ipg7ll2N7P7Fi/k4vl8mNvVGQRcZlyomAu7I5Ga4JrSsusys5v2puKwEL1D/cZSAtGVfdfdETMzI7/P3oiEAjFBHvpcAjm+bpKhfvS1XdFFPs0bRFVhO6rWrjNAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAynVJLtgmRhFF5+ENvqU4P4LxEaf9G43CHMcAF5I2oRDtiXNHptqn7wwesKXuDDYiZZROGomAyl02z/REuWqITBb1Ju3WZCS9Pv3mBA7ZeFD4VINuKRHN2XB0rzoS2opiRkb9lr87zPdwBKtqiExWiI0pg0idw6/vSVILjFePyVs=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

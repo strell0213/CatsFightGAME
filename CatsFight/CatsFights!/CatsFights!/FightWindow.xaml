@@ -1,0 +1,92 @@
+﻿<Window x:Class="CatsFights_.FightWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CatsFights_"
+        mc:Ignorable="d"
+        Title="FightWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid Background="#FFF069FF">
+        <Image x:Name="CatSit" Margin="50,0,0,67" Source="/cat-006.png" Stretch="Fill" Width="150" Height="150" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Image x:Name="CatJump" Margin="50,0,0,67" Source="/Cat-Jump-PNG.png" Stretch="Fill" Visibility="Hidden" Width="200" Height="200" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Image Margin="30,69,0,0" Source="/hplogo.png" Stretch="Fill" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Margin="30,118,0,0" Source="/silalogo.png" Stretch="Fill" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Image Margin="0,69,30,0" Source="/hplogo.png" Stretch="Fill" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Image Margin="0,118,30,0" Source="/silalogo.png" Stretch="Fill" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <Image x:Name="EnemySit" Margin="0,0,62,67" Source="/5ca86702a4b1e169f1d26273.png" Stretch="Fill" Width="148" Height="150" VerticalAlignment="Bottom" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="HPCountUser" Content="100" HorizontalAlignment="Left" Margin="60,69,0,0" VerticalAlignment="Top" Width="40" Height="25" FontWeight="Bold"/>
+        <Label x:Name="SLCountUser" Content="20" HorizontalAlignment="Left" Margin="60,118,0,0" VerticalAlignment="Top" Width="40" Height="25" FontWeight="Bold"/>
+        <Label x:Name="HPCountEnemy" Content="100" HorizontalAlignment="Right" Margin="0,69,60,0" VerticalAlignment="Top" Width="40" Height="25" FontWeight="Bold"/>
+        <Label x:Name="SLCountEnemy" Content="20" HorizontalAlignment="Right" Margin="0,118,60,0" VerticalAlignment="Top" Width="40" Height="25" FontWeight="Bold"/>
+        <Image Margin="0,-30,0,0" Source="/logocatsfight.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="200">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="ClickButton" Content="Click!" HorizontalAlignment="Center" Margin="0,0,0,25" VerticalAlignment="Bottom" Height="58" Width="100" Background="#FFF386FF" Foreground="DimGray" BorderBrush="Black" FontWeight="Bold" FontStyle="Italic" FontSize="14" Click="ClickButton_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Grid x:Name="WINGRID" Width="800" Height="450" Visibility="Hidden">
+            <Grid.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Grid.Background>
+            <Grid Width="400" Height="400" Background="#FFA434AF" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="ПОБЕДА" FontWeight="Bold" FontSize="72" FontStyle="Italic" Foreground="White" Width="400" Height="200" VerticalAlignment="Top"></Label>
+                <Label Content="LEVEL UP!" FontWeight="Bold" FontSize="48" FontStyle="Italic" Foreground="White" Width="400" Height="200" VerticalAlignment="Top" Margin="0,80,0,0"></Label>
+                <Label x:Name="NewLevelLabel" Content="Ваш уровень: " FontWeight="Bold" FontSize="22" FontStyle="Italic" Foreground="White" Width="400" Height="150" VerticalAlignment="Top" Margin="0,140,0,0"></Label>
+                <Button x:Name="ToMainButton" Content="В главное меню!" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="112" Background="#FFF386FF" Foreground="White" Height="34" Click="ShopButton_Click" FontWeight="Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid x:Name="LoseGrid" Height="450" Width="800" Visibility="Hidden">
+            <Grid.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Grid.Background>
+            <Grid Width="400" Height="400" Background="#FFA434AF" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Поражение" FontWeight="Bold" FontSize="70" FontStyle="Italic" Foreground="Black" Width="400" Height="200" VerticalAlignment="Top"/>
+                <Label Content="Lose level.." FontWeight="Bold" FontSize="48" FontStyle="Italic" Foreground="White" Width="400" Height="200" VerticalAlignment="Top" Margin="0,80,0,0"></Label>
+                <Label x:Name="LoseLevelLabel" Content="Ваш уровень: " FontWeight="Bold" FontSize="22" FontStyle="Italic" Foreground="White" Width="400" Height="150" VerticalAlignment="Top" Margin="0,140,0,0"></Label>
+                <Button x:Name="ToMainButtonLose" Content="В главное меню!" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="112" Background="#FFF386FF" Foreground="White" Height="34" Click="ShopButton_Click" FontWeight="Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </Grid>
+        <Button x:Name="ExitButton" Content="" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="30" Width="30" Foreground="DimGray" BorderBrush="{x:Null}" FontWeight="Bold" FontStyle="Italic" FontSize="14" Click="ExitButton_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/Exitlogo.png" />
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
